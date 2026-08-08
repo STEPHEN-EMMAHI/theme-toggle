@@ -13,11 +13,13 @@
   </head>
   <body>
     <div
-      class="flex gap-16 flex-col items-center justify-center h-screen dark:bg-zinc-900"
+      class="container flex gap-16 flex-col items-center justify-center h-screen dark:bg-zinc-900"
     >
       <!-- HEADER -->
       <header>
-        <h1 class="font-bold text-3xl dark:text-white">Appearance Mode</h1>
+        <h1 class="appearance font-bold text-3xl dark:text-white">
+          Appearance Mode
+        </h1>
       </header>
 
       <!-- MAIN -->
@@ -25,10 +27,12 @@
         <div
           class="border-gray-200 rounded-full p-2 ring-2 ring-gray-200 dark:border-zinc-800 dark:ring-gray-600"
         >
-          <div class="flex gap-8 bg-gray-200 p-4 rounded-full dark:bg-zinc-800">
+          <div
+            class="buttonContainer flex gap-8 bg-gray-200 p-4 rounded-full dark:bg-zinc-800"
+          >
             <button
               aria-label="toggleMode-Btn"
-              id="lightMode"
+              id="lightModeBtn"
               class="scale-130 transition-transform duration-200 ease-in-out text-amber-500"
             >
               <!-- lightMode -->
@@ -54,7 +58,7 @@
                 <path d="m19.07 4.93-1.41 1.41" />
               </svg>
             </button>
-            <button class="text-zinc-400" id="darkMode">
+            <button class="text-zinc-400" id="darkModeBtn">
               <!-- darkMode -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +79,9 @@
       </main>
 
       <footer>
-        <p class="dark:text-white">Toggle the switch to change mode</p>
+        <p class="textBottom dark:text-white">
+          Toggle the switch to change mode
+        </p>
       </footer>
     </div>
     <script type="module" src="/src/controller/main.js"></script>
