@@ -14,9 +14,9 @@ if (IS_DARK_MODE) {
 }
 
 // apply styles when light mode button is clicked
-const LIGHT_MODE = document.getElementById("lightModeBtn");
-LIGHT_MODE.addEventListener("click", lightModeTheme);
+const LIGHT_MODE_BTN = document.getElementById("lightModeBtn");
+LIGHT_MODE_BTN.addEventListener("click", lightModeTheme);
 
 // apply styles when dark mode button is clicked
-const DARK_MODE = document.getElementById("darkModeBtn");
-DARK_MODE.addEventListener("click", darkModeTheme);
+const DARK_MODE_BTN = document.getElementById("darkModeBtn");
+DARK_MODE_BTN.addEventListener("click", darkModeTheme);
