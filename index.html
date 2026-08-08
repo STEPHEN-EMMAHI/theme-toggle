@@ -25,7 +25,7 @@
         <div class="border-gray-200 rounded-full p-2 ring-2 ring-gray-200">
           <div class="buttonContainer flex gap-8 bg-gray-200 p-4 rounded-full">
             <button
-              aria-label="toggleMode-Btn"
+              aria-label="toggleLightMode-Btn"
               id="lightModeBtn"
               class="scale-130 transition-transform duration-200 ease-in-out text-amber-500"
             >
@@ -52,7 +52,11 @@
                 <path d="m19.07 4.93-1.41 1.41" />
               </svg>
             </button>
-            <button class="text-zinc-400" id="darkModeBtn">
+            <button
+              aria-label="toggleDarkMode-Btn"
+              class="text-zinc-400"
+              id="darkModeBtn"
+            >
               <!-- darkMode -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -72,6 +76,7 @@
         </div>
       </main>
 
+      <!-- FOOTER -->
       <footer>
         <p class="textBottom">Toggle the switch to change mode</p>
       </footer>

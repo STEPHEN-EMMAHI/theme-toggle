@@ -1,28 +1,27 @@
 export function lightModeTheme() {
   // remove styles on darkMode Button
-  const DARK_MODE = document.getElementById("darkModeBtn");
-  DARK_MODE.classList.remove(
+  const DARK_MODE_BTN = document.getElementById("darkModeBtn");
+  DARK_MODE_BTN.classList.remove(
     "text-amber-500",
     "scale-130",
     "transition-transform",
     "duration-200",
     "ease-in-out",
   );
-  DARK_MODE.classList.add("text-zinc-400");
+  DARK_MODE_BTN.classList.add("text-zinc-400");
 
   // remove dark background color
   const CONTAINER = document.querySelector(".container");
-  if (CONTAINER.classList.contains("bg-zinc-900")) {
-    CONTAINER.classList.remove("bg-zinc-900");
-  }
+  CONTAINER.classList.remove("bg-zinc-900", "dark:bg-zinc-900");
+  CONTAINER.classList.add("bg-white", "bg-zinc-100");
 
   const BUTTON_CONTAINER = document.querySelector(".buttonContainer");
   BUTTON_CONTAINER.classList.remove("bg-zinc-800");
 
   // apply styles on lightMode Button
-  const LIGHT_MODE = document.getElementById("lightModeBtn");
-  LIGHT_MODE.classList.remove("text-zinc-400");
-  LIGHT_MODE.classList.add(
+  const LIGHT_MODE_BTN = document.getElementById("lightModeBtn");
+  LIGHT_MODE_BTN.classList.remove("text-zinc-400");
+  LIGHT_MODE_BTN.classList.add(
     "text-amber-500",
     "scale-130",
     "transition-transform",
