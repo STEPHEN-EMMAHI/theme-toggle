@@ -13,23 +13,17 @@
   </head>
   <body>
     <div
-      class="container flex gap-16 flex-col items-center justify-center h-screen dark:bg-zinc-900"
+      class="container flex gap-16 flex-col items-center justify-center h-screen"
     >
       <!-- HEADER -->
       <header>
-        <h1 class="appearance font-bold text-3xl dark:text-white">
-          Appearance Mode
-        </h1>
+        <h1 class="appearance font-bold text-3xl">Appearance Mode</h1>
       </header>
 
       <!-- MAIN -->
       <main>
-        <div
-          class="border-gray-200 rounded-full p-2 ring-2 ring-gray-200 dark:border-zinc-800 dark:ring-gray-600"
-        >
-          <div
-            class="buttonContainer flex gap-8 bg-gray-200 p-4 rounded-full dark:bg-zinc-800"
-          >
+        <div class="border-gray-200 rounded-full p-2 ring-2 ring-gray-200">
+          <div class="buttonContainer flex gap-8 bg-gray-200 p-4 rounded-full">
             <button
               aria-label="toggleMode-Btn"
               id="lightModeBtn"
@@ -79,9 +73,7 @@
       </main>
 
       <footer>
-        <p class="textBottom dark:text-white">
-          Toggle the switch to change mode
-        </p>
+        <p class="textBottom">Toggle the switch to change mode</p>
       </footer>
     </div>
     <script type="module" src="/src/controller/main.js"></script>
