@@ -12,12 +12,8 @@ export function darkModeTheme() {
 
   // add dark background color
   const CONTAINER = document.querySelector(".container");
-  if (
-    !CONTAINER.classList.contains("bg-zinc-900") ||
-    !CONTAINER.classList.contains("dark:bg-zinc-900")
-  ) {
-    CONTAINER.classList.add("bg-zinc-900", "dark:bg-zinc-900");
-  }
+  CONTAINER.classList.remove("bg-white", "bg-zinc-100");
+  CONTAINER.classList.add("bg-zinc-900");
 
   const BUTTON_CONTAINER = document.querySelector(".buttonContainer");
   BUTTON_CONTAINER.classList.add("bg-zinc-800");
